@@ -1,0 +1,41 @@
+\chapter{Kurzbeschreibung}
+Ziel der Arbeit ist die Entwicklung eines Emotions und Workloadmodells, welches zum einen die Emotionen von
+Menschen berechnen und vorhersagen kann und zum anderen, eingesetzt in Robotern, diesen
+ermöglichen soll, ein auf den Menschen zugeschnittenes individuelles und unterstützendes Verhalten zu
+generieren (Fong et al., 2003). Hierbei spielen mehrere Aspekte der Psychologie (Sokolowsky, 2002),
+Robotik (Bartneck and Fourlizzi, 2004; Tapus et al., 2007) und Künstlichen Intelligenz (Salichs and
+Malfaz, 2012; Bartneck et al., 2008) eine große Rolle.
+Für die Simulation menschlicher Emotionen existieren in der Literatur viele Emotionsmodelle, die das
+emotionale Verhalten von Menschen erklären bzw. simulieren soll (Marsella and Gratch, 2010). Die
+Modelle sind unterschiedlich komplex und verfolgen unterschiedliche theoretische Ansätze der
+Psychologie (Marsella and Gratch, 2014). Allerdings sind wenige dieser Modelle mit realen Messdaten
+aus psychologischen Experimenten validiert worden (Marinier et al., 2013). Das in der Dissertation
+entwickelte Emotionsmodell soll sowohl den Anspruch der theoretischen Fundiertheit in der
+Psychologie als auch deren funktionale Korrektheit mit Hilfe realer Experimentdaten nachweisen
+können.
+Es wurden unterschiedliche Ansätze für den Transfer von psychologischen Ergebnissen in ein Modell
+angewendet und untersucht. Die jeweiligen Ergebnisse mit ihren Vor- und Nachteilen werden in dieser
+Arbeit gegenübergestellt.
+Der erste Ansatz wurde in Müller und Truschzinski (2013) beschrieben und beinhaltet die
+Implementierung eines bestehenden psychologischen Modells innerhalb einer Menschsimulation. Die
+auf dieser Grundlage entwickelte Berechnungsvorschrift der emotionalen Erregung des Menschen
+während der Arbeit wurde anschließend als Rewardfunktion innerhalb eine Reinforcementlearners
+implementiert (Truschzinski et al., 2014). Anschließend wurden die Ergebnisse mit Hilfe eines erneuten
+psychologischen Experimentes validiert (Müller und Truschzinski, 2015). Dabei haben sich einige
+Probleme ergeben. Zum einen stellte es sich heraus, dass ein Computer nicht nur die
+Berechnungsvorschrift sondern auch schlicht weg Zahlen (Startparameter, Anpassungsparameter), die
+innerhalb der Studienveröffentlichungen nicht oder nur am Rande beachtet werden, benötigt. Außerdem
+ist die Validierung eines solchen Systems immer schwierig, da der konkrete Anwendungsfall ein
+anderer ist als der, der zur Modellentwicklung beigetragen hat.
+Aus diesem Grund wurde im zweiten Teil der Arbeit ein Ansatz gewählt, der den Mensch als System
+betrachtet und die Emotionsfunktion mit Hilfe von Prozessmodellen identifiziert (Pfeiffer et al., 2015).
+Hierbei stellte sich heraus, dass die Wahl der aufzunehmenden Daten (Hautleitfähigkeit, Pupillengröße
+und Fragebögen) sowie deren Einteilung in objektive und subjektive Daten essentiell war. So gibt es
+Unterschiede zwischen subjektiv empfundener Belastung, der in Fragebögen postuliert wird und
+objektiv messbarer (kognitiver) Belastung, gemessen anhand der Pupillengröße.
+Der in der Arbeit beschriebene zweite Ansatz bietet die Möglichkeit nicht nur bestehende Studien
+anhand der mit unterschiedlichen Sensoren gemessenen Daten zu untersuchen sondern zugleich
+Vorhersagen zu formulieren, die in weiteren Experimenten weiterführend untersucht werden können.
+Aus diesem Grund liefert die Arbeit einen wichtigen Beitrag, die bisher sehr große Lücke zwischen
+psychologischer Forschung und der computionalen Modellierung zu schließen, da Daten direkt von der
+psychologischen Untersuchung in die Modellbildung integriert und validiert werden können.
